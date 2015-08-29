@@ -26,11 +26,11 @@ public class ThePoint {
 	}
 	
 	//find the distance between both points
-	public ThePoint distance(ThePoint first, ThePoint second){
+	public ThePoint distance(ThePoint first, ThePoint second){  //return type should be double, you are returning distance (a number)
 		int xdist = first.getx() - second.getx();
 		int ydist = first.gety() - second.gety();
 		ThePoint distance = new ThePoint(xdist, ydist);
-		return distance;
+		return distance;  //distance is not calculated correctly. it should be the hypotenuse of the right angle triangle
 	}
 	
 	
